@@ -1,0 +1,60 @@
+<!--week09-02-font-03-google.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>반려동물</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Montserrat|Source+Sans+Pro" rel="stylesheet">
+    <style>
+        body {
+/*
+           font-family: '맑은 고딕', sans-serif; 
+           font-family: 'Montserrat', sans-serif;
+           font-family: 'Source Sans Pro', sans-serif;
+*/
+           background-image: url('./img/bg/yellow_bg.jpg');        
+        }
+        #header {
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        #p_eng {
+            font-family: 'Monoton', cursive, sans-serif;
+            font-size: 3.5em;
+        }
+        .img_dog {
+            display: inline-block;
+            text-align: center;
+        }
+        .img_dog img {
+            border-radius: 100%;
+        }
+        #main p{
+            font-size: 20px;
+            text-align: center;
+        }
+        span { font-weight: bold; color: teal}
+        #span_dotted {
+            border-bottom: 5px dotted #00ff00;
+        }
+        #span_eng { 
+            font-family: 'Montserrat';
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+   <div id="header">
+        <h1>반려 동물</h1>
+        <p id="p_eng">Companion&nbsp;&nbsp;Animal</p>
+        <span class="img_dog"><img src="./img/dog.jpg" alt=""></span>
+    </div>
+    <div id="main">
+        <p><span id="span_dotted">사람과 더불어 살아가는 동물</span>이란 의미로</p>
+        <p>1983년 오스트리아 빈<span id="span_eng">(Austria Vienna)</span>에서 열린</p>
+        <p><span>애완동물 국제 심포지엄</span>에서 처음으로 제안되었다 합니다.</p>
+    </div>
+</body>
+</html>

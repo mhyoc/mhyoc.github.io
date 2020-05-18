@@ -1,0 +1,129 @@
+<!-- hw04.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"><br><br>
+    <title>Homework #4</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        #wrapper {
+            width: 840px;
+            margin: 0 auto;
+            background-color: bisque;
+            /* display: inline-block; */
+        }
+        #button {
+            width: 140px;
+            color: white;
+            text-align: center;
+            /* height: 20px; */
+            padding: 20px 0px 0px 0px;
+            font-size: 36px;
+        }
+        #button p { font-size: 16px;}
+        #title {
+            font-family: "맑은 고딕", "돋움"; 
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 50px;
+            color:brown;
+            background-color: burlywood;
+        }
+        .subtitle {
+            font-size: 1.8em;
+            color: brown;
+            text-shadow: 2px 2px 4px #777777;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .list {
+            width: 600px;
+            margin: 10px 50px;
+            padding: 10px 0px 20px 0px;
+            font-size: 1.2em;
+        }
+        .img_tea img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+        }
+        a {
+            padding: 20px 10px;
+        }
+        #button a {
+            text-decoration: none;
+            text-align: center;
+            color:black;
+        }
+        #button a:hover {
+            text-decoration:underline;
+            text-align: center;
+            background-color:brown;
+            color: white;
+        }
+        #refer_link li { 
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+        #refer li { 
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        #refer a {
+            text-decoration: none;
+            text-align: center;
+            color:black;
+            font-size: 1.25em;
+        }
+        #refer a:hover {
+            text-decoration:underline;
+            text-align: center;
+            color:brown;
+        }
+        span { font-size: 1.25em; }  
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div id="button">
+        <a href="../index.html">InSight</a>
+        <p>&lt; Back to Index</p>
+    </div>
+    <div>
+        <h1 id="title">간절기 목감기에 좋은 생강차 만들기</h1>
+    </div>
+    <div>
+        <h3 class="subtitle">생강청 만드는 방법</h3>
+        <ol class="list">
+            <li>생강의 흙이 없어지게 깨끗하게 씻고 껍질을 손질한다.</li>
+            <li>생강을 얇게 편 썰거나 체썬다.</li>
+            <li>생강과 동량의 설탕을 준비해 체썬 생강에 조금 남기고 부어 섞는다.</li>
+            <li>소독한 병에 생강을 담고 남은 설탕으로 덮은 뒤 뚜껑을 덮어 냉장보관한다.</li>
+        </ol>
+    </div>
+    <div class="img_tea">
+        <img src="./img/gingertea.jpg" width="350" height="200" alt="생강차사진">
+    </div>
+    <div>
+        <h3 class="subtitle">생강의 효능 </h3>
+        <ul class="list">
+            <li>혈액순환 개선</li>
+            <li>소화기능 개선</li>
+            <li>관절 통증 개선</li>
+            <li>면역력 강화</li>
+        </ul>
+    </div>
+    <div class="img_tea">
+        <img src="./img/ginger.jpg" width="300" height="200" alt="생강">
+    </div>
+    <div id="refer_link">
+        <span>출처:</span>
+        <ol id="refer">
+            <li><span>1.</span><a href="http://www.10000recipe.com/recipe/6879921">레시피</a></li>
+            <li><span>2.</span><a href="https://steptohealth.co.kr/7-benefits-of-ginger/">효능</a></li>
+        </ol>
+    </div>          
+</div>
+</body>
+</html>

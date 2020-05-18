@@ -9,7 +9,7 @@
 /*    GNB 메뉴 끝     */        
 /*        첫 화면(자기 소개 화면) */
         #content {
-            text-align: center;
+/*            text-align: center;*/
         }
         #title {
             font-family: "맑은 고딕", "돋움"; 
@@ -42,6 +42,13 @@
         #profile {
             border: 1px solid #FFFFFF;
         }
+        #square {
+            list-style-type: square;
+            width: 100px;
+            font-size: 30px;
+            margin-top: 20px;
+            
+        }
     </style>
 </head>
 <body>
@@ -63,23 +70,24 @@
             </ul>
         </div>
 <!--       GNB 메뉴 끝 -->
-        <div id="content">
-            <h1 id="title">Internet Basic Practice</h1>
-            <div id="logo">
-                <img src="./img/logo/bg_character.jpg" alt="my_photo" width="250" title="캐릭터사진">
-            </div>
-            <div id="profile">
-                <p>컴퓨터소프트웨어공학과</p>
-                <p>1학년 YA반 20209999 홍길동</p>
-            </div>
-            <div id="profile_introduce">
-               <ul id="profile_list">
-                   <li>나에 대한 설명을 이렇게 저렇게 설명</li>
-                   <li>장점: 장점을 이것 저것 설명하는 중</li>
-                   <li>#클래식 #영화 #게임 #스포츠</li>
-               </ul>
-            </div>
-       </div>  <!-- content -->
+  <div id="content">
+    <div class="contA">
+      <h1>인터넷기초실습 과제</h1>
+      <p>웹 프로그래밍 기초가 되는 <strong>HTML5</strong>와 <strong>CSS3</strong>를 중심으로 학습합니다.</p>
+      <p>HTML5과 CSS3를 사용한 <em>웹 사이트 제작</em>을 작성합니다.</p> 
+    </div>
+
+<!--    본문 시작 (과제) -->    
+        <div class="contB">
+        <ul id="square">
+            <li><a href="./hw02/hw02.html">과제02</a></li>
+            <li><a href="./hw03/hw03.html">과제03</a></li>
+            <li><a href="./hw04/hw04.html">과제04</a></li>
+            <li><a href="./hw05/hw05.html">과제05</a></li>
+            <li><a href="#">과제06</a></li>            
+        </ul>
+    </div> <!-- contB -->
+ <!--    본문 끝 (10주차) -->  
 <!--       footer 시작  -->
        <div id="footer">
           <div id="footer_copyright">

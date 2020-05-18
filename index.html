@@ -1,37 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Index</title>
+<meta charset="utf-8">
+<title>2020_01_InternetBPractice_YA</title>
     <style>
-        * { margin: 0; padding: 0; }
-        #wrapper {
-            max-width: 1000px;
-            margin: 0 auto;
-            background-color: bisque;
-            background-image: url('./img/bg-01.gif');
-            background-size: cover;
-        }
-        #button {
-            width: 160px;
-            color: white;
-            text-align: center;
-            /* height: 20px; */
-            padding: 0px 0px 10px 0px;
-            margin: 0px 0px 10px 0px;
-            border: 1px solid #ff8040;
-            background-color: #ff8040;
-            font-size: 36px;
-        }
-        #button p { 
-            font-size: 16px;
-            text-align: left;
-        }
-        #button a:hover {
-            text-decoration:none;
-            text-align: center;
-            color: white;
-        }
+/*    GNB 메뉴 시작     */
+    @import url('./css/style.css');
+/*    GNB 메뉴 끝     */        
+/*        첫 화면(자기 소개 화면) */
         #content {
             text-align: center;
         }
@@ -46,6 +22,7 @@
         }
         #logo img{
             border-radius: 50%;
+            margin: 20px 0px;
         }
         #profile p {
             font-size: 20px;
@@ -53,54 +30,43 @@
         }
         #profile_introduce {
             font-size: 16px;
-            margin-top: 50px;
+            margin-top: 20px;
             margin-bottom: 100px;
-            padding-bottom: 100px;
+            padding-bottom: 50px;
         }
-        #main_menu li a {
-            display: inline;
+        #profile_list {
             list-style-type: none;
-            /* width: 155px; */
-            border-bottom: 1px solid lightgray;
-        }
-        #profile_list li {
-            list-style-type: none;
-            padding: 5px;
-        }
-        #main_menu li {
-            list-style-type: none;
-            display: inline;
-            padding-left: 20px;
-            font-size: 20px;
-
-        }
-        #main_menu li a:hover {
-            text-decoration: none;
-            background-color: white;
+            padding: 20px;
+            text-align: center;
         }
         #profile {
-            border: 1px solid white;
+            border: 1px solid #FFFFFF;
         }
     </style>
 </head>
 <body>
-<div id="wrapper">
+   <div id="wrapper">
+<!--       GNB 메뉴 시작 -->
         <div id="button">
-            <a href="./quiz09.html">InSight</a>
-            <p>인터넷기초실습 1YA</p>
+            <a href="./index.html"><img src="./img/logo/logo-01.jpg" alt="본인사진"></a>
+<!--            <a href="./index.html">본인아이디</a>-->
+            <p>YA 홍길동</p>
         </div>
-        <div>
-            <ul id="main_menu">
-                <li><a href="../../hw/hw01/hw01.html">HW01</a></li>
-                <li><a href="../../hw/hw02/hw02.html">HW02</a></li>
-                <li><a href="../../hw/hw03/hw03.html">HW03</a></li>
-                <li><a href="../../hw/hw04/hw04.html">HW04</a></li>
+       <div id="nav">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./css_lect/css_lect.html" class="active">Lecture</a></li>
+              <li><a href=../hw/hw.html>HW</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="./index.html">Profile</a></li>
             </ul>
         </div>
+<!--       GNB 메뉴 끝 -->
         <div id="content">
             <h1 id="title">Internet Basic Practice</h1>
             <div id="logo">
-                <img src="./img/bg_character.jpg" alt="my_photo" width="250" title="캐릭터사진">
+                <img src="./img/logo/bg_character.jpg" alt="my_photo" width="250" title="캐릭터사진">
             </div>
             <div id="profile">
                 <p>컴퓨터소프트웨어공학과</p>
@@ -113,8 +79,17 @@
                    <li>#클래식 #영화 #게임 #스포츠</li>
                </ul>
             </div>
-        </div>
-    <!--  본문 끝 -->
-</div>
+       </div>  <!-- content -->
+<!--       footer 시작  -->
+       <div id="footer">
+          <div id="footer_copyright">
+            <p>
+                Copyright &copy <a href="./index.html" class="site">hskim</a> All rights reserved.
+            </p>
+            <span>EMAIL : hskim11@dongyang.ac.kr</span>
+          </div>
+       </div> <!-- footer -->
+<!--       footer 끝  -->       
+   </div>   <!-- wrapper  -->
 </body>
 </html>

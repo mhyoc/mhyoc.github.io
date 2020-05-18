@@ -1,0 +1,79 @@
+/* style.css */
+
+* { margin: 0; padding: 0; }
+#wrapper {
+    width: 840px;
+    margin: 0 auto;
+    background-color: bisque;
+    /* display: inline-block; */
+}
+#button {
+    width: 140px;
+    color: white;
+    text-align: center;
+    /* height: 20px; */
+    padding: 20px 0px 0px 0px;
+    font-size: 36px;
+}
+#button p { font-size: 16px;}
+#title {
+    font-family: "맑은 고딕", "돋움"; 
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 50px;
+    color:brown;
+    background-color: burlywood;
+}
+.subtitle {
+    font-size: 1.8em;
+    color: brown;
+    text-shadow: 2px 2px 4px #777777;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.list {
+    width: 600px;
+    margin: 10px 50px;
+    padding: 10px 0px 20px 0px;
+    font-size: 1.2em;
+}
+.img_tea img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+a {
+    padding: 20px 10px;
+}
+#button a {
+    text-decoration: none;
+    text-align: center;
+    color:black;
+}
+#button a:hover {
+    text-decoration:underline;
+    text-align: center;
+    background-color:brown;
+    color: white;
+}
+#refer_link li { 
+    display: inline-block;
+    margin-bottom: 30px;
+}
+#refer li { 
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+#refer a {
+    text-decoration: none;
+    text-align: center;
+    color:black;
+    font-size: 1.25em;
+}
+#refer a:hover {
+    text-decoration:underline;
+    text-align: center;
+    color:brown;
+}
+span { font-size: 1.25em; }  

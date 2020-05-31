@@ -1,0 +1,23 @@
+<!-- week12-01-site-select_js.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Site</title>
+    <style>
+        #txt { font-size: 1.5em; }
+        #rel_site { width: 100px; height: 20px; }
+        p { font-size: 0.8em; }
+    </style>
+</head>
+<body> 
+<!--    사이트 선택   -->
+    <p id="txt">사이트 선택</p>
+    <select name="" id="rel_site" onchange = "window.open(value, '_blank');">
+        <option value="http://www.google.com">구글</option>
+        <option value="http://www.naver.com">네이버</option>
+        <option value="http://www.daum.net">다음</option>        
+    </select>
+    <p>사이트를 선택하면, 새로운 페이지로 해당 사이트가 열립니다</p>
+</body>
+</html>

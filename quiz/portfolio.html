@@ -1,0 +1,404 @@
+<!-- portfolio.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>background</title>
+<style>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+</style>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">  
+<!--<link rel="stylesheet" href="./css/style.css">-->
+<!-- (수정 '20/06/15 form 태그추가  style_contact.css ) -->
+<link rel="stylesheet" href="./css/style_contact.css">
+<!-- (수정 끝) -->
+
+<style>
+/* ./css/style.css */    
+/* reset */
+    * {margin:0; padding: 0; box-sizing: border-box;}
+    ul { list-style-type: none; }
+    a:link, a:visited { text-decoration: none; }
+    img{ border: none;}
+/* layout */    
+    body { font-family: '맑은 고딕','Montserrat', sans-serif; }
+    #wrapper {
+/*        max-width: 1300px;*/
+/*
+        width: 1280px;
+        margin: 0 auto;
+*/
+    }
+    h2, h3 {
+     text-align: center;
+    }
+    h3 {
+/*         color:  #0097A7;*/
+         font-weight: 400;
+         font-size: 1.2rem;
+         color: rgba(0, 0, 0, 0.53); 
+    }
+    p { line-height: 2; }
+/* 상단 메뉴 */
+    header {
+        width:100%;
+        height:50px;
+/*        background: rgba(255,255,255,0.6);*/
+/*        background: rgba(243, 233, 231, 0.3);*/
+        background: rgba(243, 233, 231, 1);        
+        top:0; left:0;
+        position: fixed;
+        z-index:5;
+        color: rgba(0, 0, 0, 0.53);
+    }
+        /* 왼쪽상단로고 */
+    header img.logo {
+        display: inline-block;
+        position: relative;
+        top: 5px;
+        left: 10px;
+        width: 30px;
+        transition: 0.5s;
+    }
+    header img.logo:hover {
+        transition: 0.5s;
+        transform: rotateX(180deg);
+    }
+    header nav#top_menu {
+        position: absolute;
+        top: 0px;
+        right: 5px;
+    }
+    
+    header nav li{
+        display: inline-block;
+        padding: 0 10px 10px 10px;
+        line-height: 50px;
+        text-transform: uppercase;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 0.8em;
+        font-weight:600;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        transform:scale(1); transition:all 0.5s;
+        color: rgba(0, 0, 0, 0.65);
+    }
+    header nav ul li a:hover {
+        color: #9ed409;
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    .center { text-align: center; }
+
+/* 콘텐츠A: 메인화면 */
+    .conA {
+        background-image: url('./img/portfolio/bg_workingman.jpg');
+        opacity: 0.75;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        width: 100%;
+        height: 800px;
+        text-align: center;
+/*        height: 100vh;*/
+    }
+    .conA .container{
+         position: absolute;
+         top:40%;
+         left:0; right:0;
+         font-size:300%;
+         text-align: center;
+         background: rgba(0, 0, 0, 0.3);
+         color: white;
+    } 
+    .conA h1 {
+        margin-top: 0;
+        margin-bottom: 0px;
+        font-size: 2.5em;
+        color: #fff;
+        text-shadow: 0 1px 10px #cccccc;
+        letter-spacing: 0.2em;
+        margin-left: 0.2em;
+        min-height: 30px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .conA p { margin-bottom: 30px;}
+    
+/* (수정: 추가 '20/06/16')   */
+    #section_container {
+        margin: 2rem auto;
+        max-width: 950px;
+        padding: 2rem;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 4px 12px -1px rgba(0,0,0,0.45);
+        -moz-box-shadow: 0px 4px 12px -1px rgba(0,0,0,0.45);
+        box-shadow: 0px 4px 12px -1px rgba(0,0,0,0.45);
+        border-radius: 1rem;
+    }
+    
+/*    (수정 끝) */
+    
+    /* 콘텐츠B: 개요 */    
+    .conB .container {
+/*        position: absolute;*/
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    .conB .text {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+    .conB h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1em;
+    }
+    .conB p {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.8;
+        opacity: 0.8;
+    }
+    .conB a {
+        color: #5D9AB2;
+        text-decoration: none;
+    }
+    .conB a:hover	{
+        text-decoration: underline;
+    }
+    .conB .icon	{
+        display: inline-block;
+        margin-bottom: 20px;
+        font-size: 40px;
+        width: 2em;
+        line-height: 2em;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #ddd;
+        color: #fff;
+    }
+    .conC h2 { margin-bottom: 20px; font-size: 1em;}
+/*
+    .conC .container {
+        position: absolute;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+*/
+    
+        /* 콘텐츠D: profile */    
+    .conD .container {
+        padding-top: 30px;
+        padding-bottom: 5px;
+    }
+    .conD .text {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .conD h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1em;        
+    }
+    .conD p {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 1em;
+        line-height: 1.8;
+        color: #0097A7;
+        font-weight:500;
+    }
+    .conD li {
+        margin-top: 0;
+        margin-bottom: 2px;
+        font-size: 0.8em;
+    }
+    .conD #profile_img {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .conD #profile_img img {
+        border-radius: 50%;
+        opacity: 0.8;
+        filter: sepia(50%)
+    }
+    
+/* fontawome */
+    .fas {font-size:50px; color:#b9fb05;opacity:0.5;
+          transform:scale(1); transition:all 0.5s;
+    }
+    .fas:hover {opacity:1; transform:scale(2.4);}
+    span .fas {font-size:20px; color: rgba(5, 232, 251, 0.72);}
+    
+/*  하단 푸터: footer */ 
+    #footer {
+            position: relative;
+            color: #000000;
+            border-top: 1px solid #fff;
+            padding-top: 5px;
+            margin-top: 5px;
+            margin-bottom: 50px;
+    }
+    #footer_copyright {position: absolute;            
+           left: 10px;
+           bottom: -200px;
+           margin-bottom: 20px;
+    }
+    #footer_copyright .site:hover { color: aqua; }
+/*     footer end */
+    
+    
+    /* 반응형(미디어 쿼리) */
+    @media (min-width: 768px) {
+        .conB .container {
+            display: flex;
+/*            max-width: 1200px;*/
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .conB .text {
+            flex: 1;
+        }
+    }
+</style>
+</head>
+<body>
+<div id="wrapper">
+<!-- 헤더: 상단 메뉴 -->  
+   <header> 
+        <h1><a href="./index.html">
+        <span><img class="logo" src="./img/portfolio/logo-01-trans.png" alt="로고"></span>
+        </a></h1>
+        <nav id="top_menu">       
+           <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#hw">Homework</a></li>
+                <li><a href="#home">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#profile">Profile</a></li>
+           </ul>
+        </nav>
+    </header>
+    <!-- 콘텐츠A: 메인화면 -->
+    <section class="conA" id="home">
+        <div class="container">
+            <h1>My Log</h1>
+            <p>인터넷기초실습</p>
+            <i class="fas fa-laptop" aria-hidden="true"></i>
+        </div>
+    </section> 
+
+<!--    (수정 시작: profile 추가 '20/06/15) -->
+
+<!-- 콘텐츠D: profile section 시작 -->        
+    <section class="conD" id="profile">
+      <div class="container">
+            <h3>Profile</h3>
+            <div id="profile_img">
+                <img src="./img/logo/bg_character.jpg" alt="my_photo" width="250" title="캐릭터사진">
+            </div>
+            <div class="text">
+                <p>컴퓨터소프트웨어공학과</p>
+                <p>1학년 YA반 20209999 홍길동</p>
+               <ul id="profile_list">
+                   <li>나에 대한 설명을 이렇게 저렇게 설명</li>
+                   <li>장점: 장점을 이것 저것 설명하는 중</li>
+                   <li>#클래식 #영화 #게임 #스포츠</li>
+               </ul>
+            </div>
+       </div>  <!-- container -->
+    </section> <!-- 콘텐츠D: profile section 끝 -->
+    
+    <div id="section_container">
+    
+    <!-- 콘텐츠B: 개요 section 시작 -->
+    <section class="conB" id="hw">
+       <h3>실습 결과물</h3>
+       <div class="container">
+        <div class="text">
+            <span class="fas fa-chalkboard-teacher icon" aria-hidden="true"></span>
+            <h2>수업 실습 예제</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fugiat distinctio neque. </p>
+            <a href="#">MORE... 
+            <span><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+            </a>
+        </div>
+        <div class="text">
+            <span class="fas fa-laptop icon" aria-hidden="true"></span>
+            <h2>Homework</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fugiat distinctio neque. </p>
+            <a href="#">MORE... 
+            <span><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+            </a>
+        </div>
+        <div class="text">
+            <span class="fas fa-envelope-open-text icon" aria-hidden="true"></span>
+            <h2>중간고사 과제</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos fugiat distinctio neque. </p>
+            <a href="#">MORE... 
+            <span><i class="fas fa-chevron-right" aria-hidden="true"></i></span>
+            </a>
+        </div> 
+                       
+      </div>
+    </section>   <!-- 콘텐츠B: 개요 section 끝 -->
+    
+<!--    (수정 시작: form 태그 추가 '20/06/15) -->
+   
+    <!-- 콘텐츠C: contact section 시작 -->   
+    <section id="contact" class="conC contact">
+<!--      <div class="container">-->
+        <h2>메시지 보내기</h2>
+        <form action="#">
+            <div class="form-container">
+                <div class="field">
+                    <label>이름:</label>
+                    <input type="text" placeholder="이름">
+                </div>
+                <div class="field">
+                    <label>연락처:</label>
+                    <input type="tel" placeholder="연락처">
+                </div>
+                <div class="field w-100">
+                    <label>Email:</label>
+                    <input type="mail" placeholder="Email">
+                </div>
+                <div class="field w-100">
+                    <label>메시지:</label>
+                    <textarea cols="30" rows="3"></textarea>
+                </div>
+            </div><!--.form-container-->
+            <div class="submit-form">
+                <input type="submit" class="button" value="보내기">
+            </div>
+        </form>
+<!--       </div>    -->
+    </section> <!-- 콘텐츠C: contact section 끝 -->
+<!--(수정 끝) -->
+
+<!-- 푸터: 하단 -->
+      <div class="footer_container"> 
+       <div id="footer">
+          <div id="footer_copyright">
+            <p>
+                Copyright &copy <a href="./index.html" class="site">hskim</a> All rights reserved.
+            </p>
+            <span>EMAIL : hskim11@dongyang.ac.kr</span>
+          </div>
+       </div> <!-- footer 끝 -->
+       </div> 
+</div> <!-- section_container -->       
+</div> <!-- wrapper -->
+</body>
+</html>
